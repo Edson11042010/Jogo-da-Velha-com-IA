@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo Da Velha</title>
+  <link rel="stylesheet" href="Velha.css">
+</head>
+<body>
+
+  <h1>Jogo da Velha</h1>
+
+  <!-- Tela de escolha do modo -->
+  <div id="modoEscolha">
+    <p>Escolha o modo de jogo:</p>
+    <button onclick="selecionarModo('1')">1 Jogador (vs IA)</button>
+    <button onclick="selecionarModo('2')">2 Jogadores</button>
+  </div>
+
+  <!-- Tabuleiro e mensagens -->
+  <div id="tabuleiro" style="display:none;"></div>
+  <p id="mensagem"></p>
+  <button id="btnReiniciar" onclick="reiniciar()" style="display:none;">Reiniciar</button>
+
+  <script src="Velha.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* ====== ESTILO GERAL ====== */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center;     /* centraliza horizontalmente */
+  height: 100vh;           /* altura total da tela */
+  background: #f0f0f0;
+  margin: 0;
+}
+
+/* ====== TÍTULO ====== */
+h1 {
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+}
+
+/* ====== TELA DE ESCOLHA DE MODO ====== */
+#modoEscolha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#modoEscolha p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#modoEscolha button {
+  margin: 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  transition: background 0.2s;
+}
+
+#modoEscolha button:hover {
+  background-color: #555;
+}
+
+/* ====== TABULEIRO ====== */
+#tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.celula {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 2px solid #333;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.celula:hover {
+  background: #ddd;
+}
+
+/* ====== MENSAGEM ====== */
+#mensagem {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* ====== BOTÃO DE REINICIAR ====== */
+button#btnReiniciar {
+  margin-top: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+button#btnReiniciar:hover {
+  background-color: #555;
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 400px) {
+  #tabuleiro {
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+  }
+
+  .celula {
+    font-size: 30px;
+  }
+
+  #modoEscolha button, button#btnReiniciar {
+    padding:
