@@ -110,4 +110,7 @@ button#btnReiniciar:hover {
   }
 
   #modoEscolha button, button#btnReiniciar {
-    padding:
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
